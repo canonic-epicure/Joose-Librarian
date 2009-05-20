@@ -8,7 +8,7 @@ $ENV{JOOSE_INC} = "localLib/root1;localLib/root2;localLib/root3";
 use Joose::Librarian;
 
 
-for (my $i = 'A'; $i le 'J'; $i = chr(ord($i)+1) ) {
+for (my $i = 'A'; $i le 'J'; $i = chr(ord($i) + 1) ) {
 	
 	my $book = Joose::Librarian->get_book($i eq 'I' ? 'ext://I' : $i);
 	

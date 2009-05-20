@@ -96,6 +96,8 @@ sub create_bundle {
     
     my $lib_dir = dir($ENV{JOOSE_LIB});
     my $bundle_dir = dir($ENV{JOOSE_BUNDLE});
+    $bundle_dir->mkpath();
+    $lib_dir->mkpath();
     
     my $bundle_file = file($new_hash . ".js")->absolute($bundle_dir);
     

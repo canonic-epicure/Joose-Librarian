@@ -7,7 +7,6 @@ _build
 .lwpcookies
 Joose-Librarian-*
 cover_db
-inc
 .project
 .externalToolBuilders
 .includepath
